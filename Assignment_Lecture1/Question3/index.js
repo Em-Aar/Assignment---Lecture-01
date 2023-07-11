@@ -1,3 +1,4 @@
+//Question - 3, Name Cases
 var personName = 'rEhAn';
 console.log("Uppercase: ", personName.toUpperCase());
 console.log("Lowercase: ", personName.toLowerCase());

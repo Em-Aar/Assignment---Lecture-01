@@ -7,13 +7,13 @@ let numbers_list = [5,4,3,2,1];
 //console.log(numbers_list[5]);
 
 //correcting the error
-let i = 3
-if (i > numbers_list.length) {
-    console.log(`${i} is out of index range.`)
+let k = 3
+if (k > numbers_list.length) {
+    console.log(`${k} is out of index range.`)
 
 }
 else {
-    console.log(numbers_list[i]);
+    console.log(numbers_list[k]);
 }
 
 

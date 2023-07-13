@@ -1,3 +1,4 @@
+//Question - 9, Favorite Number
 var favoriteNumber = 99;
-var message = "My favourite number is ".concat(favoriteNumber, ".");
-console.log(message);
+var Message = "My favourite number is ".concat(favoriteNumber, ".");
+console.log(Message);

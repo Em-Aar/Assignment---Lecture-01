@@ -4,7 +4,7 @@ name:string;
 population:number;
 }
 
-var cities: City[] = [{
+let cities: City[] = [{
     name:'Islamabad', 
     population:1232000
 },

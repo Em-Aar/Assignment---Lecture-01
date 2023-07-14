@@ -17,5 +17,3 @@ if (k >= numbers_list.length) {
 } else {
     console.log(numbers_list[k]);
 }
-
-

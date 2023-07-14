@@ -7,7 +7,30 @@ Add an optional parameter to make_album() that allows you to store the number of
 If the calling line includes a value for the number of tracks, add that value to the album’s Object. 
 Make at least one new function call that includes the number of tracks on an album. */
 
-function make_album (artist: string, title: string, tracks?: number) {
+
+//This function is simple, without tracks. Just to understand how to define object in fucntion.
+function make_album (artist: string, title: string) {
+
+    let album = {
+        
+        artist_name: artist,
+        album_title: title,
+    }
+    
+    return album;
+
+}
+
+let first_album = make_album ('Taylor Swift','Midnights');
+let second_album = make_album ('Justin Bieber', 'Justice');
+console.log ('First Album: ',first_album);
+console.log ('Second Album: ',second_album);
+
+
+
+//This code will do the both part of the question in one go. Making function with any track and previous parameters.
+
+function make_album_with_track (artist: string, title: string, tracks?: number) {
     
     if (tracks!= undefined) {
         let album = {
@@ -27,9 +50,9 @@ function make_album (artist: string, title: string, tracks?: number) {
 
 }
 
-let album1 = make_album("Atif Aslam","Aadat");
-let album2 = make_album ('Ali Azmat','Junoon');
-let album3 = make_album ('Ali','Pak',9);
+let album1 = make_album_with_track ("Atif Aslam","Aadat");
+let album2 = make_album_with_track ('Ali Azmat','Junoon');
+let album3 = make_album_with_track ('Ali','Pak',9);
 
 console.log(album1);
 console.log(album2);

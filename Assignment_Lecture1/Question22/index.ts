@@ -10,12 +10,11 @@ let numbers_list : number [] = [5,4,3,2,1];
 //console.log(numbers_list[5]);
 
 //correcting the error
-let k : number = 3
-if (k > numbers_list.length) {
+let k : number = 5
+if (k >= numbers_list.length) {
     console.log(`${k} is out of index range.`)
 
-}
-else {
+} else {
     console.log(numbers_list[k]);
 }
 

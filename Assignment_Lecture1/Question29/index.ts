@@ -21,12 +21,12 @@ if (favorite_fruits.includes('Apple')) {
 if (favorite_fruits.includes('Strawberry')) {
     console.log("I really like Strawberry."); 
 } else {
-    console.log("Strawberry is not included in favorite fruit list.")
+    console.log("Strawberry is not included in favorite fruit list.");
 }
 
 if (favorite_fruits.includes('Avocado')) {
     console.log("I really like Avocado.");
 } else {
-    console.log("Avocado isn't included in favorite fruit list.")
+    console.log("Avocado isn't included in favorite fruit list.");
 
 }

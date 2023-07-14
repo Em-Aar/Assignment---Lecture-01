@@ -1,18 +1,21 @@
-//Question - 45 , Cars: 
+/*Question - 45 , Write a function that stores information about a car in a Object. 
+The function should always receive a manufacturer and a model name. 
+It should then accept an arbitrary number of keyword arguments. 
+Call the function with the required information and two other name-value pairs, 
+such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly. */
+
+
 function make_car (manufacturer: string, model: string, ...other_info: any[]) {
     const car = {
         manufacturer,
         model,
     };
 
-// Taking the key and the value passed to the object other info and assigning it as a property to the car object.
-    for (const info of other_info) {
-        const key = Object.keys(info)[0];
-        const value = info[key];
-        car[key] = value;
-    }
+    // for other infor, any number of keyword arguments.
+    Object.assign(car, ...other_info); 
     return car;
+
 }
 
-const car = make_car('Hona', 'City', {color: 'blue'}, {version: 'Automatic'});
+const car = make_car('Honda', 'City', {color: 'blue', version: 'Automatic', speed: 220},{Other: 1, more:2});
 console.log(car);

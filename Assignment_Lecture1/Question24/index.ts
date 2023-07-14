@@ -37,7 +37,7 @@ console.log("Is last name in array is rehan? I predict true");
 console.log(strg_array[3].toLowerCase() == 'rehan');
 
 //sting inequality test with lower case - false
-console.log("Is first name in array is not REHAN ? I predict false");
+console.log("Is last name in array is not REHAN ? I predict false");
 console.log(strg_array[3].toLocaleLowerCase() != 'rehan');
 
 //numbers equality test - true

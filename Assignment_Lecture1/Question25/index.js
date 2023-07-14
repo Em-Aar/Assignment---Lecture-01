@@ -6,8 +6,5 @@ var alien_color = 'green';
 if (alien_color == 'green') {
     console.log('The player has earned 5 points.');
 }
-else if (alien_color != 'yellow') {
-    console.log("The test is passed.");
-}
-else if (alien_color == 'yellow') {
+if (alien_color == 'yellow') {
 }
